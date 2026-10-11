@@ -1,0 +1,34 @@
+title: SGX3 Fall Training 2026
+description: Virtual HPC and Science Gateways training for undergraduate students.
+url: "https://hackhpc.org"
+baseurl: "/sgx3-fall-training-2026"
+markdown: kramdown
+lang: en_US
+
+# Served at https://hackhpc.org/sgx3-fall-training-2026/ — the HackHPC
+# organization site (HackHPC/hackhpc.github.io) owns the hackhpc.org custom
+# domain, so this project repo's GitHub Pages site is published under it
+# automatically. No CNAME file is needed in this repository.
+
+application_url: "https://forms.gle/UMbYaVC8EJu2Vsfu7"
+repository_url: "https://github.com/HackHPC/sgx3-fall-training-2026"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/images/og-image.png
+        width: 1200
+        height: 630
+        alt: "SGX3 Fall Training 2026: October 19 – December 30, 2026, 100% virtual, $500 stipend for selected participants"
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - README.md
+  - .bundle/
