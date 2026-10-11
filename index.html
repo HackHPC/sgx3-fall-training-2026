@@ -9,6 +9,10 @@ description: >-
 ---
 
 <section class="hero" aria-labelledby="hero-title">
+  <picture class="hero-art">
+    <source type="image/webp" srcset="{{ '/assets/images/hero-sunrise-800.webp' | relative_url }} 800w, {{ '/assets/images/hero-sunrise-1280.webp' | relative_url }} 1280w, {{ '/assets/images/hero-sunrise-1983.webp' | relative_url }} 1983w" sizes="100vw">
+    <img src="{{ '/assets/images/hero-sunrise-1280.jpg' | relative_url }}" alt="Illustration of three students with backpacks watching the sun rise over a mountain range" width="1983" height="793" fetchpriority="high">
+  </picture>
   <div class="container hero-inner">
     <p class="eyebrow">100% Virtual &middot; For Undergraduate Students &middot; No Prior HPC Experience Required</p>
     <h1 id="hero-title">SGX3 Fall Training <span class="accent">2026</span></h1>

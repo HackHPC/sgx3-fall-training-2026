@@ -19,6 +19,8 @@ assets/css/style.css     All styles; design tokens are at the top in :root
 assets/js/main.js        Mobile navigation toggle
 assets/images/
   sgx3-logo.svg          Official SGX3 logo (do not edit or redraw)
+  nsf-logo.svg           NSF logo for the funding acknowledgment
+  hero-sunrise-*.webp/.jpg  Hero artwork (800/1280/1983px WebP + JPEG fallback)
   apply-qr.svg           QR code for the application URL
   og-image.png           1200×630 social sharing image
   favicon.svg, favicon-32.png, apple-touch-icon.png
