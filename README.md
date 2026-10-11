@@ -1,68 +1,80 @@
 # SGX3 Fall Training 2026
 
-Event website for **SGX3 Fall Training 2026**, a 100% virtual training program for undergraduate students in research computing, HPC, AI/SI, and Science Gateways.
+**Build Technical Skills. Develop Your Professional Identity. Become Part of the HPC and Science Gateways Community.**
 
-- **Live site:** https://hackhpc.org/sgx3-fall-training-2026/
-- **Apply:** https://forms.gle/UMbYaVC8EJu2Vsfu7
+*Learn. Build. Connect. Grow.*
 
-The site is a single-page [Jekyll](https://jekyllrb.com/) site built for GitHub Pages. It has no frameworks or tracking scripts, and uses a few lines of JavaScript for the mobile menu.
+- 🌐 **Program website:** https://hackhpc.org/sgx3-fall-training-2026/
+- 📝 **Apply now:** https://forms.gle/UMbYaVC8EJu2Vsfu7
 
-## Project structure
+## About the Program
 
-```text
-_config.yml              Site settings (title, URLs, application link, SEO image)
-_layouts/default.html    Page shell: <head>, SEO tags, header, footer
-_includes/header.html    Logo + navigation
-_includes/footer.html    Footer
-index.html               All page sections (hero, about, training, benefits, details, apply)
-assets/css/style.css     All styles; design tokens are at the top in :root
-assets/js/main.js        Mobile navigation toggle
-assets/images/
-  sgx3-logo.svg          Official SGX3 logo (do not edit or redraw)
-  nsf-logo.svg           NSF logo for the funding acknowledgment
-  hero-sunrise-*.webp/.jpg  Hero artwork (800/1280/1983px WebP + JPEG fallback)
-  apply-qr.svg           QR code for the application URL
-  og-image.png           1200×630 social sharing image
-  favicon.svg, favicon-32.png, apple-touch-icon.png
-```
+SGX3 Fall Training 2026 introduces undergraduate students to the technologies, tools, and professional communities that support modern scientific research. The program combines hands-on technical training with professional development activities designed to help students build practical computing skills, establish their professional identities, and explore opportunities in High-Performance Computing (HPC), Artificial Intelligence (AI), Super Intelligence (SI), and Science Gateways.
 
-The application URL is set once, as `application_url` in `_config.yml`, and every **Apply Now** button uses it. If the URL ever changes, update `_config.yml` and regenerate the QR code (see below).
+Participants will explore research computing environments, collaborative software development tools, and national cyberinfrastructure resources while building professional portfolios and connecting with the broader research computing community.
 
-## Local development
+**No prior HPC experience is required.**
 
-Requirements: Ruby 3.3 (pinned in `.ruby-version`; the `github-pages` gem does not yet support Ruby 4) and Bundler.
+## Program at a Glance
 
-```bash
-bundle config set --local path vendor/bundle   # optional: keep gems in the project
-bundle install
-bundle exec jekyll serve
-```
+| | |
+|---|---|
+| **Program** | SGX3 Fall Training 2026 |
+| **Dates** | October 19 – December 30, 2026 |
+| **Schedule** | Mondays and Wednesdays |
+| **Time** | 6:00–8:00 PM Eastern |
+| **Format** | 100% Virtual |
+| **Audience** | Undergraduate students |
+| **Prior Experience** | No prior HPC experience required |
+| **Stipend** | $500 for selected participants |
 
-Then open http://127.0.0.1:4000/sgx3-fall-training-2026/. Note the subpath: the site uses `baseurl: /sgx3-fall-training-2026`, so all internal links and assets go through Jekyll's `relative_url` filter.
+Stipend eligibility and completion requirements will be communicated to accepted participants.
 
-To build without serving:
+## What You'll Learn
 
-```bash
-JEKYLL_ENV=production bundle exec jekyll build   # output in _site/
-```
+### Technical Skills
+Foundational research computing tools and workflows:
+- Linux and command-line fundamentals
+- Python programming
+- Git and GitHub
+- Jupyter Notebooks
+- Scientific computing and science gateways
+- Digital communication and technical documentation
 
-### Regenerating the QR code
+### Professional Development
+Professional skills for academic, research, and technical career opportunities:
+- Professional portfolios using GitHub Pages
+- Resumes and personal statements
+- LinkedIn and professional networking
+- Workplace communication and collaboration
+- Technical reporting and documentation
+- Internships, research opportunities, and national computing conferences
 
-```bash
-qrencode -t SVG -l M -m 2 --rle -o assets/images/apply-qr.svg "https://forms.gle/UMbYaVC8EJu2Vsfu7"
-```
+### National Computing Resources
+An introduction to the national HPC, AI/SI, cloud, and research cyberinfrastructure resources that support scientific discovery, and how advanced computing environments help researchers across disciplines.
 
-Scan the result (or decode it with a QR library) to confirm it opens the exact application URL before you commit.
+## Why Participate?
 
-## Deployment
+Participants will have opportunities to:
 
-Deployment is automatic. GitHub Pages builds this repository from the **`main` branch, root folder** (classic Pages build), so pushing to `main` publishes the site.
+- Develop foundational research computing skills.
+- Gain hands-on experience with technical tools.
+- Create a professional portfolio highlighting their accomplishments.
+- Build connections with the HPC and Science Gateways community.
+- Strengthen communication, teamwork, and technical documentation skills.
+- Discover internships, research programs, and professional development opportunities.
+- Explore career pathways in research computing.
 
-How the URL works: the HackHPC organization site ([HackHPC/hackhpc.github.io](https://github.com/HackHPC/hackhpc.github.io)) has the custom domain `hackhpc.org`. GitHub Pages serves every project repository in the organization under that domain at `/<repository-name>/`, so this repository appears at `https://hackhpc.org/sgx3-fall-training-2026/` without any extra configuration.
+## How to Apply
 
-- Do **not** add a `CNAME` file to this repository. The custom domain belongs to the organization site.
-- Keep `url: "https://hackhpc.org"` and `baseurl: "/sgx3-fall-training-2026"` in `_config.yml` so canonical and Open Graph URLs are correct.
+Complete the application form: **https://forms.gle/UMbYaVC8EJu2Vsfu7**
 
-## Content guidelines
+The application deadline will be announced.
 
-Only publish confirmed program details. Don't add an application deadline, number of positions, stipend eligibility rules, sponsors, partners, or contact addresses until the program team confirms them.
+## About This Repository
+
+This repository contains the source for the program website. For an explanation of how the site is built and how to run it on your own computer, see **[DEVELOPMENT.md](DEVELOPMENT.md)**.
+
+## Acknowledgments
+
+The SGCI is funded by the National Science Foundation under award number ACI-1547611. SGX3 is funded by the National Science Foundation under award number 2231406. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.

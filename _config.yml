@@ -31,4 +31,5 @@ exclude:
   - Gemfile.lock
   - vendor/
   - README.md
+  - DEVELOPMENT.md
   - .bundle/
