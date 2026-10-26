@@ -1,0 +1,32 @@
+---
+layout: default
+title: Session Summaries
+permalink: /session-summaries/
+description: >-
+  Recaps of each SGX3 Fall Training 2026 session: topics covered,
+  discussions, and the resources shared with the cohort.
+---
+
+<section class="page-head" aria-labelledby="page-title">
+  <div class="container">
+    <p class="section-kicker">SGX3 Fall Training 2026</p>
+    <h1 id="page-title">Session Summaries</h1>
+    <p class="page-head-intro">Recaps of each live session, with the topics, discussions, and resources shared with the cohort.</p>
+  </div>
+</section>
+
+<section class="section" aria-label="Sessions">
+  <div class="container">
+    <ul class="session-list">
+      {% assign sessions = site.sessions | sort: 'session' | reverse %}
+      {% for s in sessions %}
+      <li class="session-card">
+        <p class="session-meta">Session {{ s.session }} &middot; <time datetime="{{ s.date | date: '%Y-%m-%d' }}">{{ s.date | date: '%A, %B %-d, %Y' }}</time></p>
+        <h2><a href="{{ s.url | relative_url }}">{{ s.short_title | default: s.title }}</a></h2>
+        <p>{{ s.description }}</p>
+        <a class="session-more" href="{{ s.url | relative_url }}">Read the Session {{ s.session }} summary<span aria-hidden="true"> &rarr;</span></a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

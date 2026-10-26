@@ -1,0 +1,125 @@
+# Links shown on the Resources page (/resources/), grouped by category.
+# Add new links to the matching group; `session` is the session where the
+# link was first shared (leave it out for general program links).
+
+- group: Program & Cohort
+  links:
+    - name: HackHPC SGX3 Training Site
+      url: https://hackhpc.org/sgx3-fall-training-2026/
+      description: Official event portal containing program schedules, benefits, and application details.
+      session: 1
+    - name: HackHPC SGX3 Repository
+      url: https://github.com/HackHPC/sgx3-fall-training-2026
+      description: Main GitHub source code repository for the SGX3 Fall Training 2026 website and training materials.
+      session: 2
+    - name: Slack Workspace Setup
+      url: https://www.youtube.com/watch?v=o3HJuPaITWk
+      description: Video onboarding guide for configuring cohort profiles and posting introduction messages.
+      session: 1
+
+- group: Training Modules
+  links:
+    - name: Amigoscode (Vim Essentials, Spring Boot for Beginners)
+      url: https://amigoscode.com/
+      description: Course platform for the Vim Essentials and Spring Boot for Beginners task sheet modules.
+      session: 2
+    - name: Kaggle Learn – Python
+      url: https://www.kaggle.com/learn/python
+      description: Kaggle Python certification course (about 5 hours) covering scripting, control flow, and data handling.
+      session: 2
+    - name: Kaggle Learn – Intro to Machine Learning
+      url: https://www.kaggle.com/learn/intro-to-machine-learning
+      description: Kaggle certification course (about 3 hours) on decision trees, model validation, and scoring.
+      session: 2
+    - name: OverTheWire Bandit
+      url: https://overthewire.org/wargames/bandit/
+      description: Hands-on Linux wargame for shell navigation, file permissions, and command-line security.
+      session: 2
+    - name: Google Cloud Skills Boost
+      url: https://www.cloudskillsboost.google/
+      description: Platform for the Google Cloud Computing Foundations "Cloud Computing Fundamentals" course (about 8 hours).
+      session: 2
+    - name: Science Gateways Webinar Archive
+      url: https://sciencegateways.org/networking-community/webinar-archive
+      description: Archive of community webinars used for the 2-page webinar review assignments.
+      session: 2
+
+- group: Portfolio & Professional Identity
+  links:
+    - name: GitHub Pages Quickstart
+      url: https://docs.github.com/en/pages/quickstart
+      description: Official documentation guide for building and deploying student portfolio websites.
+      session: 1
+    - name: Canva Design Platform
+      url: https://www.canva.com
+      description: Design platform used for creating portfolio visual assets, headshots, and graphics.
+      session: 1
+    - name: Science Gateways LinkedIn
+      url: https://www.linkedin.com/company/sciencegateways
+      description: Official SGCI/SGX3 organizational page for professional networking and career tracking.
+      session: 1
+    - name: ORCID
+      url: https://orcid.org/
+      description: Free persistent researcher identifier to link from your portfolio alongside LinkedIn and GitHub.
+      session: 2
+    - name: Jeaime's GitHub Profile
+      url: https://github.com/jeaimehp
+      description: GitHub profile for lead instructor Jeaime Powell, featuring workshop sample code and automation tools.
+      session: 2
+
+- group: National Computing Resources
+  links:
+    - name: NAIRR Pilot Portal
+      url: https://nairrpilot.org
+      description: National AI Research Resource portal serving federal research projects across 44 states.
+      session: 1
+    - name: ACCESS-CI
+      url: https://access-ci.org/
+      description: Advanced Cyberinfrastructure Coordination Ecosystem (Services & Support) for national HPC allocations.
+      session: 2
+    - name: CloudBank
+      url: https://www.cloudbank.org/
+      description: Access to commercial cloud computing resources for NSF-funded research and education.
+      session: 2
+    - name: National Research Platform (NRP)
+      url: https://nationalresearchplatform.org/
+      description: Distributed national platform for research computing, data, and GPU resources.
+      session: 2
+    - name: National Science Foundation
+      url: https://www.nsf.gov
+      description: Federal agency funding SGX3 (award 2231406) and the SGCI (award ACI-1547611).
+      session: 1
+
+- group: Student Opportunities & Community
+  links:
+    - name: SGX3 Student Programs
+      url: https://sciencegateways.org/education-training/student-focused
+      description: Central hub for undergraduate coding institutes, hackathons, and student opportunities.
+      session: 1
+    - name: SGX3 Newsletter
+      url: https://sciencegateways.org/newsletter
+      description: Science Gateways newsletter that all trainees subscribe to as part of the task sheet.
+      session: 2
+    - name: ADMI
+      url: https://admiusa.org/
+      description: Computing consortium for HBCU and minority-serving institution computational science teams and code-a-thons.
+      session: 1
+    - name: ADMI Symposium Info
+      url: https://sciencegateways.org/events/symposium
+      description: Annual symposium platform for undergraduate computational research poster presentations.
+      session: 1
+    - name: ORNL Student Internships (PCIP)
+      url: https://www.orau.org/ornl/student-programs/index.html
+      description: Oak Ridge National Laboratory student programs, including the PCIP summer undergraduate research internship (applications via Zintellect).
+      session: 1
+    - name: US-RSE
+      url: https://us-rse.org/
+      description: United States Research Software Engineer Association, one of the national programs trainees can apply to.
+      session: 2
+
+- group: AI Tools
+  links:
+    - name: MetaMuse AI Platform
+      url: https://muse.ai
+      description: Multi-agent AI assistant harness used for workflow automation and code synthesis.
+      session: 1

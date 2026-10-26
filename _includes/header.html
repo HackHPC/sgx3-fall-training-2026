@@ -5,8 +5,6 @@
       <span class="brand-event">Fall Training 2026</span>
     </a>
 
-    <a class="btn btn-apply btn-sm header-apply" href="{{ site.application_url }}" target="_blank" rel="noopener">Apply Now<span class="visually-hidden"> (opens in a new tab)</span></a>
-
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
       <span class="nav-toggle-bars" aria-hidden="true"></span>
       <span class="nav-toggle-label">Menu</span>
@@ -14,12 +12,13 @@
 
     <nav id="site-nav" class="site-nav" aria-label="Primary">
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#training">Training</a></li>
-        <li><a href="#benefits">Benefits</a></li>
-        <li><a href="#details">Program Details</a></li>
+        <li><a href="{{ '/' | relative_url }}#about">About</a></li>
+        <li><a href="{{ '/' | relative_url }}#training">Training</a></li>
+        <li><a href="{{ '/' | relative_url }}#benefits">Benefits</a></li>
+        <li><a href="{{ '/' | relative_url }}#details">Program Details</a></li>
+        <li><a href="{{ '/session-summaries/' | relative_url }}"{% if page.url contains '/session-summaries/' %} aria-current="page"{% endif %}>Session Summaries</a></li>
+        <li><a href="{{ '/resources/' | relative_url }}"{% if page.url == '/resources/' %} aria-current="page"{% endif %}>Resources</a></li>
       </ul>
-      <a class="btn btn-apply btn-sm" href="{{ site.application_url }}" target="_blank" rel="noopener">Apply Now<span class="visually-hidden"> (opens in a new tab)</span></a>
     </nav>
   </div>
 </header>

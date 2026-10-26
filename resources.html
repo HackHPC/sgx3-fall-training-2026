@@ -1,0 +1,38 @@
+---
+layout: default
+title: Resources
+permalink: /resources/
+description: >-
+  Links to the platforms, guides, and opportunities shared with the
+  SGX3 Fall Training 2026 cohort.
+---
+
+<section class="page-head" aria-labelledby="page-title">
+  <div class="container">
+    <p class="section-kicker">SGX3 Fall Training 2026</p>
+    <h1 id="page-title">Resources</h1>
+    <p class="page-head-intro">Platforms, guides, and opportunities shared with the cohort, collected in one place.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container prose resources">
+    {% for group in site.data.resources %}
+    <h2 id="{{ group.group | slugify }}">{{ group.group }}</h2>
+    <table>
+      <thead>
+        <tr><th scope="col">Name</th><th scope="col">URL</th><th scope="col">Description</th></tr>
+      </thead>
+      <tbody>
+        {% for link in group.links %}
+        <tr>
+          <th scope="row">{{ link.name }}</th>
+          <td><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.url | remove: 'https://' | remove: 'www.' | remove_last: '/' }}<span class="visually-hidden"> (opens in a new tab)</span></a></td>
+          <td>{{ link.description }}{% if link.session %} <span class="resource-session">Shared in <a href="{{ '/session-summaries/' | relative_url }}session-{{ link.session | prepend: '0' | slice: -2, 2 }}/">Session {{ link.session }}</a></span>{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endfor %}
+  </div>
+</section>

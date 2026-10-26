@@ -13,7 +13,17 @@ lang: en_US
 application_url: "https://forms.gle/UMbYaVC8EJu2Vsfu7"
 repository_url: "https://github.com/HackHPC/sgx3-fall-training-2026"
 
+collections:
+  sessions:
+    output: true
+    permalink: /session-summaries/:name/
+
 defaults:
+  - scope:
+      path: ""
+      type: sessions
+    values:
+      layout: session
   - scope:
       path: ""
     values:
@@ -32,4 +42,6 @@ exclude:
   - vendor/
   - README.md
   - DEVELOPMENT.md
+  - PICKUPANDGO.md
+  - CLAUDE.md
   - .bundle/

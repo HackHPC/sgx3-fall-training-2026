@@ -11,7 +11,7 @@ This guide explains how the SGX3 Fall Training 2026 website works, how to run it
 
 ### Overview
 
-The site is a single web page built with [Jekyll](https://jekyllrb.com/), the static site generator that GitHub Pages runs. Jekyll combines a layout, a few reusable snippets, and the page content into one finished HTML file. There is no database, no server-side code, no front-end framework, and no tracking.
+The site is a one-page program overview plus a Session Summaries section, built with [Jekyll](https://jekyllrb.com/), the static site generator that GitHub Pages runs. Jekyll combines a layout, a few reusable snippets, and the page content into one finished HTML file. There is no database, no server-side code, no front-end framework, and no tracking.
 
 ```text
 _config.yml ──┐
@@ -26,10 +26,15 @@ assets/ ──────┘  (CSS, JavaScript, and images are copied as-is)
 ```text
 _config.yml              Site settings: title, URLs, application link, social image
 _layouts/default.html    Page shell: <head>, SEO tags, favicons, header, footer
-_includes/header.html    SGX3 logo, navigation, Apply Now button, mobile menu toggle
+_layouts/session.html    Layout for one session summary page
+_includes/header.html    SGX3 logo, navigation, mobile menu toggle
 _includes/footer.html    Footer links and the NSF funding acknowledgment
-index.html               All page content, section by section
-assets/css/style.css     All styles (colors and sizes are defined at the top in :root)
+index.html               Home page content, section by section
+session-summaries.html   Session Summaries list page (/session-summaries/)
+_sessions/               One Markdown file per session summary
+resources.html           Resources page (/resources/), built from _data/resources.yml
+_data/resources.yml      Every link shared with the cohort: name, URL, description, group
+assets/css/site.css     All styles (colors and sizes are defined at the top in :root)
 assets/js/main.js        The mobile menu toggle (the only JavaScript on the site)
 assets/images/
   sgx3-logo.svg          Official SGX3 logo (do not edit or redraw)
@@ -64,11 +69,11 @@ Gemfile                  Ruby gems (the github-pages gem pins Jekyll and its plu
 | `application_url` | `https://forms.gle/UMbYaVC8EJu2Vsfu7` | Used by **every** Apply Now button |
 | `repository_url` | GitHub repository | Footer link |
 
-Because the site lives in a subfolder, every internal link and asset path goes through Jekyll's `relative_url` filter, for example `{{ '/assets/css/style.css' | relative_url }}`. Keep that pattern when you add images or links, or they will break on the live site.
+Because the site lives in a subfolder, every internal link and asset path goes through Jekyll's `relative_url` filter, for example `{{ '/assets/css/site.css' | relative_url }}`. Keep that pattern when you add images or links, or they will break on the live site.
 
 ### Design System
 
-Colors are CSS variables at the top of `assets/css/style.css`:
+Colors are CSS variables at the top of `assets/css/site.css`:
 
 | Variable | Color | Used for |
 |---|---|---|
@@ -175,6 +180,30 @@ JEKYLL_ENV=production bundle exec jekyll build
 
 ## Making Common Changes
 
+**Add a session summary:** Copy `_sessions/session-01.md` to a new file such as `_sessions/session-02.md` and fill in the front matter:
+
+```yaml
+---
+session: 2                 # number used for ordering (newest is listed first)
+date: 2026-10-21           # session date
+title: "Full headline shown at the top of the summary page"
+short_title: "Short title for the list card"
+description: >-
+  One or two sentences shown on the Session Summaries list and in link previews.
+---
+```
+
+Write the summary in Markdown below the front matter (`##` for sections, `###`/`####` for sub-sections, `>` for context notes, Markdown tables for link directories). The page is published at `/session-summaries/session-02/` and appears on the list automatically. Session pages are public, so check with the program team before you name students or include their personal details.
+
+**Add a resource link:** Every link added to the site (for example, in a session summary's link directory) should also be added to `_data/resources.yml` so it shows up on the Resources page. Put it under the matching `group` (or add a new group):
+
+```yaml
+    - name: GitHub Pages Quickstart
+      url: https://docs.github.com/en/pages/quickstart
+      description: Official documentation guide for building and deploying student portfolio websites.
+      session: 1        # optional: links to that session's summary
+```
+
 **Edit program text:** Change the section in `index.html`. Also update the README and the description in the front matter of `index.html` if they repeat the same information.
 
 **Change the application link:**
@@ -189,9 +218,9 @@ qrencode -t SVG -l M -m 2 --rle -o assets/images/apply-qr.svg "https://forms.gle
 
 Scan the new code with a phone before you commit, and make sure it opens the right form.
 
-**Replace the hero artwork:** Export the new image at 800, 1280, and full width as WebP, plus a 1280px JPEG, using the same `hero-sunrise-*` file names. To adjust the crop, change `object-position` on `.hero-art img` in `style.css`.
+**Replace the hero artwork:** Export the new image at 800, 1280, and full width as WebP, plus a 1280px JPEG, using the same `hero-sunrise-*` file names. To adjust the crop, change `object-position` on `.hero-art img` in `site.css`.
 
-**Change colors:** Edit the variables in `:root` at the top of `style.css`, then check text contrast with a tool like the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/).
+**Change colors:** Edit the variables in `:root` at the top of `site.css`, then check text contrast with a tool like the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/).
 
 ### Content guidelines
 

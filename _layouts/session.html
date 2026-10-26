@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<section class="page-head" aria-labelledby="page-title">
+  <div class="container">
+    <p class="section-kicker">Session {{ page.session }} &middot; <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%A, %B %-d, %Y' }}</time></p>
+    <h1 id="page-title">{{ page.title }}</h1>
+  </div>
+</section>
+
+<article class="section">
+  <div class="container prose">
+    {{ content }}
+    <p class="session-back"><a href="{{ '/session-summaries/' | relative_url }}"><span aria-hidden="true">&larr; </span>All session summaries</a></p>
+  </div>
+</article>
