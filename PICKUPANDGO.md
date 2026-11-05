@@ -4,7 +4,7 @@ Handoff notes for whoever (human or AI session) picks this project up next.
 **Read this first, then keep it current:** update the "Current state",
 "Open items", and "Change log" sections whenever you change the project.
 
-_Last updated: 2026-10-26_
+_Last updated: 2026-11-04_
 
 ---
 
@@ -46,8 +46,8 @@ $500 stipend for selected participants.
   `/session-summaries/<name>/`; list page sorts by `session:` (newest first).
   How to add one: see "Add a session summary" in `DEVELOPMENT.md`.
 - Resources page is generated from `_data/resources.yml` (grouped tables;
-  stack into cards under 700px). "Shared in Session N" links to
-  `/session-summaries/session-0N/`, so keep the `session-NN` file naming.
+  stack into cards under 700px). "Shared in Session N" links to that session's
+  summary when one exists, and is plain text when it doesn't.
 - Our stylesheet is `assets/css/site.css`, NOT `style.css`: the default
   `jekyll-theme-primer` (forced by `github-pages`) also renders
   `assets/css/style.css` and can overwrite ours depending on build order.
@@ -81,23 +81,20 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
 - New files that shouldn't be published must be added to `exclude:` in
   `_config.yml` (README, DEVELOPMENT, PICKUPANDGO, CLAUDE are excluded).
 
-## Current state (as of 2026-10-26)
+## Current state (as of 2026-11-04)
 
-- Site is live. `main` is in sync with `origin/main` after the 2026-10-26 push.
-- Local production build passes on Ruby 3.3.12.
+- Site is live. The 2026-11-04 session rewrite below was committed and pushed to
+  `main` on 2026-11-04. The "confirm" items in Open items were still unanswered
+  at push time, so that content is public as written.
 - Sections: Hero, About (`#about`), What You'll Learn (`#training`),
   Why Participate (`#benefits`), Program at a Glance (`#details`),
   Application (`#apply`: heading, blurb, application URL, QR code).
   NSF acknowledgment in footer.
-- **Session Summaries** nav tab + list page + Session 1 summary (2026-10-19)
-  added 2026-10-26.
-- **Resources** nav tab + page added 2026-10-26; now 26 links in 6 groups
-  (Session 1 + Session 2 directories, plus platforms named in Session 2).
-- **Session 2 summary** (2026-10-21) added 2026-10-26 as `_sessions/session-02.md`.
-- **Session 3 summary** added 2026-10-26 as `_sessions/session-03.md`; date
-  assumed 2026-10-26 (next Monday after Session 2; not stated in the text).
-- All of the 2026-10-26 work was committed and pushed to `main` on 2026-10-26
-  (live on GitHub Pages).
+- **Session articles are being rewritten** from text the user pastes in, one
+  session at a time. Old Sessions 1–3 removed 2026-11-04 (recoverable from git
+  at `aa7b3c6`). New `session-01.md` through `session-05.md` are in; later
+  sessions pending.
+- **Resources** nav tab + page; old links were kept.
 - All **Apply Now buttons removed** (2026-10-26): header (desktop + mobile),
   hero, Program at a Glance, and `#apply` section. Still linking to the form:
   the URL + QR in `#apply` and the footer link "Apply to SGX3 Fall Training 2026".
@@ -109,37 +106,49 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
   OG image, and `DEVELOPMENT.md` (section table, pre-push checklist) still
   reference applying. Confirm whether to remove/replace those too, e.g. with
   an "in progress" / schedule page.
-- **Session 1 summary names students** with class year, major, hometown, and
-  high school, and attributes discussion opinions to them. The page is public
-  once pushed; confirm with the program team that this is OK before pushing.
-- Session 1 summary is user-supplied text; its claims (e.g. the Sept 29, 2026
-  NSF "AI → SI" terminology change, cooling statistics) and the
-  sciencegateways.org links in its resource table were not verified.
-- **Student Deliverables Google Drive** link from Session 2 was deliberately
-  NOT published (it holds student submissions; the page says "Shared with
-  participants in Slack"). Only add it if the user explicitly confirms.
-- **Session 2 links still missing URLs** ("Link shared in chat"): Abraham's
-  GitHub portfolio and the Live Demo page. Add them to `session-02.md` and
-  `_data/resources.yml` when the user provides them.
-- **Replaced 3 broken (404) Session 1 links** with best-guess working pages;
-  confirm with the user: SGX3 Student Programs →
-  sciencegateways.org/education-training/student-focused; ADMI → admiusa.org;
-  ORNL PCIP → orau.org/ornl/student-programs (also used for Session 2's
-  "Zintellect ORNL PCIP" row). "ADMI Symposium" URL loads but lands on the
-  generic sciencegateways.org Events page.
-- Jeaime's GitHub Profile uses github.com/jeaimehp (from `gh api user`).
-- Session 2 edits to user text: "nairpilot.org" → nairrpilot.org, "Texas
-  Advanced Computer Center" → Computing, "Kimora / Qimora Mason" → Kimora
-  Mason (matches Session 1); ASCII diagrams turned into tables.
-- Session 3 was trimmed to ONLY the Linux "Technical Core" (user: that was
-  the only thing covered). Removed from the pasted text: overview, SGX3
-  framework, AI→SI pivot, student AI debate, cooling, MetaMuse, program
-  milestones (Dec 1–3 site visit, Dec 7–11 Costa Rica hackathon, Dec 14
-  portfolio presentations, early-2027 stipend), Charlie Nelson welcome, and
-  the resource directory. Those milestones are unpublished; ask before
-  adding them anywhere.
+- **Slack invite link deliberately NOT published.** The user's new Session 1
+  text includes the live workspace invite; on this public site anyone could
+  join with it. The page says "Invite shared directly with participants". Only
+  add it if the user explicitly confirms.
+- New Session 1 is user-supplied text. Edits made: citation markers removed,
+  `nairpilot.org` → nairrpilot.org, event site URL `http` → `https`, ORNL PCIP
+  renamed "Pathways to Computing Internship Program" (per the Zintellect page;
+  the text said "Post-Master's / Undergraduate"), "program, virtual onboarding"
+  → "program, virtually onboarding". Its claims (AI → SI terminology, AWS token
+  evaluation, 400 projects / 44 states, 1 billion Muse tokens) were not verified.
+- **New Sessions 2 and 3 publish the NSF site visit and Costa Rica Hackathon
+  (Dec 7–11)**, as in the user's text. The site visit dates conflict: Session 2
+  says Dec 2–3, Session 3 says Dec 1–3. Confirm the date and that both are OK to
+  make public before pushing.
+- New Sessions 2 and 3 name students (module roles, one student's portfolio, and
+  Charlie Nelson joining the cohort), as in the user's text. Confirm with the
+  program team before pushing.
+- New Session 3 edits to user text: Drive folder URL withheld ("Shared directly
+  with participants"); Charlie Nelson's student folder row removed (it's a
+  personal Drive folder, and the user had this row removed from the old Session 3).
+  The old Session 3 also left out the Charlie Nelson welcome and the milestones;
+  the new text includes both, so they were kept. Its claims were not verified.
+- New Session 2 edits to user text: citation markers removed, Drive folder URL
+  withheld ("Shared directly with participants"), ORNL PCIP renamed as in
+  Session 1, LinkedIn URL simplified to the main company page. Its claims were
+  not verified.
+- **Resources entries with no matching new article were kept** (e.g. Slack setup
+  video, GitHub Pages Quickstart, ADMI, training module links). Review them once
+  the new articles are in.
+- New Session 4 edits to user text: "[suspicious link removed]" in the body →
+  Buffer (inferred from the resource table; confirm), Slack invite and channel
+  URLs withheld, "Charlie" → Charlie Nelson (matches Session 3), citation-free.
+  It also lists workshop attendees by name, including Destiny Hackett. Its claims
+  were not verified.
+- New Session 5 edits to user text: Drive and Slack channel URLs withheld, fixed
+  broken bold around `learntools`. It names Omnibond as an example of a company
+  expecting AI agent use; confirm that's OK to publish. Its claims were not
+  verified.
+- Other milestones from the old Session 3 text (Dec 14 portfolio presentations,
+  early-2027 stipend) are unpublished; ask before adding them.
 - Never add links to Google Drive deliverable folders (shared or per-student).
-- Add Session 4+ summaries as they are provided.
+- Add new Session 6+ summaries as they are provided. Transcripts for Sessions
+  1–3 and 5 (`transcript-11-2.txt`) are in `../transcripts/`.
 - No session schedule, syllabus, or materials pages exist yet.
 - Context outside the repo (parent folder `../`): branding assets,
   overview slides PDF, screenshots, transcripts, and an accepted-students
@@ -149,6 +158,18 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
 
 Newest first. Add a line for every meaningful change.
 
+- 2026-11-04 — Added new Session 5 from user text (no new public links; Kaggle
+  Python was already on Resources).
+- 2026-11-04 — Added new Session 4 from user text; Resources: added Buffer and
+  Perplexity AI.
+- 2026-11-04 — Added new Session 3 from user text (no new public links; Bandit
+  was already on Resources).
+- 2026-11-04 — Added new Session 2 from user text; Resources: added Abraham's
+  GitHub Portfolio and Jeaime Powell's Live Demo Web Page.
+- 2026-11-04 — Removed old Session 1–3 articles; added new Session 1 from user
+  text; Resources: added GitHub, LinkedIn, ADMI 2026 Teams, Muse AI join, swapped
+  in real ADMI 2026 Symposium and Zintellect PCIP URLs; "Shared in Session N" is
+  now plain text when that session has no article.
 - 2026-10-26 — Trimmed Session 3 to the Linux Technical Core only (new title,
   description; headings promoted).
 - 2026-10-26 — Added Session 3 summary (ASCII diagrams → tables, commands →

@@ -28,7 +28,8 @@ description: >-
         <tr>
           <th scope="row">{{ link.name }}</th>
           <td><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.url | remove: 'https://' | remove: 'www.' | remove_last: '/' }}<span class="visually-hidden"> (opens in a new tab)</span></a></td>
-          <td>{{ link.description }}{% if link.session %} <span class="resource-session">Shared in <a href="{{ '/session-summaries/' | relative_url }}session-{{ link.session | prepend: '0' | slice: -2, 2 }}/">Session {{ link.session }}</a></span>{% endif %}</td>
+          {% assign link_session = site.sessions | where: 'session', link.session | first %}
+          <td>{{ link.description }}{% if link.session %} <span class="resource-session">Shared in {% if link_session %}<a href="{{ link_session.url | relative_url }}">Session {{ link.session }}</a>{% else %}Session {{ link.session }}{% endif %}</span>{% endif %}</td>
         </tr>
         {% endfor %}
       </tbody>

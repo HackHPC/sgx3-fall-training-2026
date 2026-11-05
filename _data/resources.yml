@@ -46,6 +46,14 @@
 
 - group: Portfolio & Professional Identity
   links:
+    - name: GitHub
+      url: https://github.com
+      description: Software development platform used by trainees to build code repositories and host public professional portfolio sites.
+      session: 1
+    - name: LinkedIn
+      url: https://www.linkedin.com
+      description: Professional networking platform where students optimize profiles, connect with SGX3/SGCI, and network with researchers.
+      session: 1
     - name: GitHub Pages Quickstart
       url: https://docs.github.com/en/pages/quickstart
       description: Official documentation guide for building and deploying student portfolio websites.
@@ -66,6 +74,18 @@
       url: https://github.com/jeaimehp
       description: GitHub profile for lead instructor Jeaime Powell, featuring workshop sample code and automation tools.
       session: 2
+    - name: Jeaime Powell's Live Demo Web Page
+      url: https://jeaimehpc.com/jeaimes_awesome_code/
+      description: Live web page deployed during the session to demonstrate successful GitHub Pages publishing.
+      session: 2
+    - name: Abraham's GitHub Portfolio
+      url: https://abr9h9m.github.io/Abraham-s-portfolio.github.io/
+      description: Live sample GitHub Pages portfolio site shared by returning scholar Abraham Ashade.
+      session: 2
+    - name: Buffer
+      url: https://buffer.com/
+      description: Social media management and automation platform used to schedule posts and manage professional web presence.
+      session: 4
 
 - group: National Computing Resources
   links:
@@ -104,13 +124,17 @@
       url: https://admiusa.org/
       description: Computing consortium for HBCU and minority-serving institution computational science teams and code-a-thons.
       session: 1
-    - name: ADMI Symposium Info
-      url: https://sciencegateways.org/events/symposium
-      description: Annual symposium platform for undergraduate computational research poster presentations.
+    - name: ADMI 2026 Symposium
+      url: https://admiusa.github.io/2026symposium/
+      description: Official conference portal for the Association of Computer/Information Sciences and Engineering Departments at Minority Institutions.
       session: 1
-    - name: ORNL Student Internships (PCIP)
-      url: https://www.orau.org/ornl/student-programs/index.html
-      description: Oak Ridge National Laboratory student programs, including the PCIP summer undergraduate research internship (applications via Zintellect).
+    - name: ADMI 2026 Teams
+      url: https://hackhpc.org/admi26/teams.html
+      description: HackHPC team registration site for the ADMI 2026 Symposium student hackathon and coding teams.
+      session: 1
+    - name: Zintellect (ORNL PCIP Opportunity)
+      url: https://www.zintellect.com/Opportunity/Details/ORNL-PCIP-2027
+      description: Application portal for the Oak Ridge National Laboratory (ORNL) Pathways to Computing Internship Program (PCIP), Summer 2027.
       session: 1
     - name: US-RSE
       url: https://us-rse.org/
@@ -123,3 +147,11 @@
       url: https://muse.ai
       description: Multi-agent AI assistant harness used for workflow automation and code synthesis.
       session: 1
+    - name: Muse AI Referral Join Link
+      url: https://muse.ai/join
+      description: Invitation redemption URL to claim 1 billion Muse tokens upon registering a personal AI agent account.
+      session: 1
+    - name: Perplexity AI
+      url: https://www.perplexity.ai/
+      description: Conversational AI search engine with real-time source citations, used to discover technical Slack communities.
+      session: 4
