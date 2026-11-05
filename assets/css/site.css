@@ -177,14 +177,14 @@ main:focus { outline: none; }
 }
 .site-nav ul {
   display: flex;
-  gap: 0;
+  gap: 4px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 .site-nav ul a {
   display: block;
-  padding: .5em .55em;
+  padding: .5em .8em;
   color: var(--navy);
   font-weight: 600;
   font-size: .95rem;
@@ -227,7 +227,7 @@ main:focus { outline: none; }
 .nav-toggle[aria-expanded="true"] .nav-toggle-bars::before { top: 0; transform: rotate(45deg); }
 .nav-toggle[aria-expanded="true"] .nav-toggle-bars::after { top: 0; transform: rotate(-45deg); }
 
-@media (max-width: 1080px) {
+@media (max-width: 920px) {
   :root { --header-h: 64px; }
   .brand img { height: 42px; }
 

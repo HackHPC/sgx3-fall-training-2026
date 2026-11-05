@@ -76,12 +76,12 @@
   links:
     - name: NAIRR Pilot Portal
       url: https://nairrpilot.org/
-      description: National AI Research Resource portal connecting researchers to national computing infrastructure, datasets, and AI models.
+      description: National Architecture for Innovation, Research, and Resource-sharing portal connecting researchers to national computing infrastructure, datasets, and AI models.
       session: 1
-    - name: ACCESS-CI
+    - name: ACCESS-CI Registration Portal
       url: https://access-ci.org/
-      description: Advanced Cyberinfrastructure Coordination Ecosystem (Services & Support) for national HPC allocations.
-      session: 1
+      description: Primary national cyberinfrastructure portal for creating research computing accounts and accessing cloud, HPC, and AI infrastructure.
+      session: 6
     - name: CloudBank
       url: https://www.cloudbank.org/
       description: Access to commercial cloud computing resources for NSF-funded research and education.
@@ -92,7 +92,7 @@
       session: 1
     - name: National Science Foundation (NSF)
       url: https://www.nsf.gov
-      description: Official federal agency website referenced during the discussion on the NSF terminology shift from AI to Superintelligence (SI).
+      description: Official federal agency website referenced during the discussion on the NSF terminology shift from AI to Super Intelligence (SI).
       session: 1
 
 - group: Student Opportunities & Community

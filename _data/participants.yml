@@ -7,6 +7,7 @@
 - group: Program Team
   people:
     - name: Je'aime Powell
+      school: Elizabeth City State University
       role: Trainer
       initials: JP
       photo: jeaime-powell.jpg
@@ -18,6 +19,7 @@
         and Lecturer at UT Austin. Je'aime also serves on the ADMI Board and as a PEARC27 Student
         Program Co-Chair.
     - name: Linda Hayden
+      school: Elizabeth City State University
       role: Program Lead
       initials: LH
       photo: linda-hayden.jpg
@@ -42,6 +44,7 @@
         National Laboratories and the UVA School of Data Science, and has been part of SGX3 for about
         three years, first as a student trainee and now as a student trainer.
     - name: Mohamed Elbakary
+      school: Elizabeth City State University
       role: Associate Professor
       initials: ME
       bio: >-

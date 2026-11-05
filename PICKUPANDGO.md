@@ -93,7 +93,7 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
   NSF acknowledgment in footer.
 - **Session articles are being rewritten** from text the user pastes in, one
   session at a time. Old Sessions 1–3 removed 2026-11-04 (recoverable from git
-  at `aa7b3c6`). New `session-01.md` through `session-05.md` are in; later
+  at `aa7b3c6`). New `session-01.md` through `session-06.md` are in; later
   sessions pending.
 - **Participants** nav tab + page added and pushed 2026-11-04: 16
   people with bios based on LinkedIn; 14 photos, initials for Bryce Cliette and
@@ -106,6 +106,14 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
 
 ## Open items / ideas
 
+- New Session 6 edits to user text: citation markers removed, `nairpilot.org` →
+  nairrpilot.org, `in here` → `inhere` (Bandit's directory), "He emphasized" merged into
+  the Powell sentence, Je'aime spelling. Its other claims were not verified.
+- NAIRR's name is "National Architecture for Innovation, Research, and Resource-sharing"
+  (user confirmed the change; exact wording from nairrpilot.org/about, 2026-11-04).
+- Session 1's NAIRR numbers updated to match nairrpilot.org (950+ projects, 50 states,
+  DC, Puerto Rico; as of 2026-11-04). The site spells it "Super Intelligence" (two
+  words), so use that everywhere.
 - School links: ECSU and NSU are on Resources (Session 1). Kentucky State isn't, since
   no article names it and the user wants no unlabeled links there. ECSU's icon is a
   screen capture (its site blocks direct downloads); NSU's favicon is only 16px.
@@ -161,7 +169,7 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
 - Other milestones from the old Session 3 text (Dec 14 portfolio presentations,
   early-2027 stipend) are unpublished; ask before adding them.
 - Never add links to Google Drive deliverable folders (shared or per-student).
-- Add new Session 6+ summaries as they are provided. Transcripts for Sessions
+- Add new Session 7+ summaries as they are provided. Transcripts for Sessions
   1–3 and 5 (`transcript-11-2.txt`) are in `../transcripts/`.
 - No session schedule, syllabus, or materials pages exist yet.
 - Context outside the repo (parent folder `../`): branding assets,
@@ -172,6 +180,14 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
 
 Newest first. Add a line for every meaningful change.
 
+- 2026-11-04 — Updated Session 1's NAIRR numbers and changed Superintelligence to Super
+  Intelligence site-wide, matching nairrpilot.org.
+- 2026-11-04 — Updated NAIRR to its new name site-wide per user, with wording from
+  nairrpilot.org/about.
+- 2026-11-04 — Removed the Training, Benefits, and Program Details nav tabs per user; the
+  home page sections remain. Restored nav spacing and the 920px mobile breakpoint.
+- 2026-11-04 — Added new Session 6 from user text; ACCESS-CI on Resources now labeled
+  Session 6. Added ECSU link and icon to Je'aime, Dr. Hayden, and Dr. Elbakary's cards.
 - 2026-11-04 — Participants page: school names link to school sites with favicons
   (`_data/schools.yml`, `assets/images/schools/`).
 - 2026-11-04 — Added Dr. Mohamed Elbakary to the Participants page; LinkedIn link is
