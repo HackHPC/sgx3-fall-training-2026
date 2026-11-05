@@ -94,7 +94,8 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
   session at a time. Old Sessions 1–3 removed 2026-11-04 (recoverable from git
   at `aa7b3c6`). New `session-01.md` through `session-05.md` are in; later
   sessions pending.
-- **Resources** nav tab + page; old links were kept.
+- **Resources** nav tab + page; every link is tied to a session article (user:
+  no unlabeled links). Resync pushed to `main` on 2026-11-04.
 - All **Apply Now buttons removed** (2026-10-26): header (desktop + mobile),
   hero, Program at a Glance, and `#apply` section. Still linking to the form:
   the URL + QR in `#apply` and the footer link "Apply to SGX3 Fall Training 2026".
@@ -132,9 +133,6 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
   withheld ("Shared directly with participants"), ORNL PCIP renamed as in
   Session 1, LinkedIn URL simplified to the main company page. Its claims were
   not verified.
-- **Resources entries with no matching new article were kept** (e.g. Slack setup
-  video, GitHub Pages Quickstart, ADMI, training module links). Review them once
-  the new articles are in.
 - New Session 4 edits to user text: "[suspicious link removed]" in the body →
   Buffer (inferred from the resource table; confirm), Slack invite and channel
   URLs withheld, "Charlie" → Charlie Nelson (matches Session 3), citation-free.
@@ -158,6 +156,10 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
 
 Newest first. Add a line for every meaningful change.
 
+- 2026-11-04 — Synced `_data/resources.yml` with the new articles: names and
+  descriptions match the article tables, session labels corrected. Removed, per
+  the user, the six links no article mentions: HackHPC Repository, Slack setup
+  video, GitHub Pages Quickstart, ORCID, SGX3 Newsletter, ADMI (`admiusa.org`).
 - 2026-11-04 — Added new Session 5 from user text (no new public links; Kaggle
   Python was already on Resources).
 - 2026-11-04 — Added new Session 4 from user text; Resources: added Buffer and

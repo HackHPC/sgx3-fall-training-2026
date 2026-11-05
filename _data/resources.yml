@@ -1,20 +1,13 @@
 # Links shown on the Resources page (/resources/), grouped by category.
-# Add new links to the matching group; `session` is the session where the
-# link was first shared (leave it out for general program links).
+# Add new links to the matching group. `session` is the session whose article
+# lists the link, or else the first article that names it. Every link needs a
+# session: links no article mentions don't belong on this page.
 
 - group: Program & Cohort
   links:
-    - name: HackHPC SGX3 Training Site
+    - name: HackHPC SGX3 Event Site
       url: https://hackhpc.org/sgx3-fall-training-2026/
-      description: Official event portal containing program schedules, benefits, and application details.
-      session: 1
-    - name: HackHPC SGX3 Repository
-      url: https://github.com/HackHPC/sgx3-fall-training-2026
-      description: Main GitHub source code repository for the SGX3 Fall Training 2026 website and training materials.
-      session: 2
-    - name: Slack Workspace Setup
-      url: https://www.youtube.com/watch?v=o3HJuPaITWk
-      description: Video onboarding guide for configuring cohort profiles and posting introduction messages.
+      description: Official program portal providing event schedules, training modules, task sheet guidelines, and curriculum resources.
       session: 1
 
 - group: Training Modules
@@ -23,18 +16,18 @@
       url: https://amigoscode.com/
       description: Course platform for the Vim Essentials and Spring Boot for Beginners task sheet modules.
       session: 2
-    - name: Kaggle Learn – Python
+    - name: Kaggle Learn Python Course
       url: https://www.kaggle.com/learn/python
-      description: Kaggle Python certification course (about 5 hours) covering scripting, control flow, and data handling.
-      session: 2
+      description: Official Kaggle interactive Python course used for completing the mandatory Task Sheet Python certification module.
+      session: 5
     - name: Kaggle Learn – Intro to Machine Learning
       url: https://www.kaggle.com/learn/intro-to-machine-learning
       description: Kaggle certification course (about 3 hours) on decision trees, model validation, and scoring.
       session: 2
-    - name: OverTheWire Bandit
+    - name: OverTheWire Bandit Wargames
       url: https://overthewire.org/wargames/bandit/
-      description: Hands-on Linux wargame for shell navigation, file permissions, and command-line security.
-      session: 2
+      description: Official cybersecurity challenge portal used throughout the training to teach Linux commands and terminal navigation.
+      session: 3
     - name: Google Cloud Skills Boost
       url: https://www.cloudskillsboost.google/
       description: Platform for the Google Cloud Computing Foundations "Cloud Computing Fundamentals" course (about 8 hours).
@@ -54,25 +47,21 @@
       url: https://www.linkedin.com
       description: Professional networking platform where students optimize profiles, connect with SGX3/SGCI, and network with researchers.
       session: 1
-    - name: GitHub Pages Quickstart
-      url: https://docs.github.com/en/pages/quickstart
-      description: Official documentation guide for building and deploying student portfolio websites.
-      session: 1
-    - name: Canva Design Platform
-      url: https://www.canva.com
-      description: Design platform used for creating portfolio visual assets, headshots, and graphics.
-      session: 1
-    - name: Science Gateways LinkedIn
-      url: https://www.linkedin.com/company/sciencegateways
-      description: Official SGCI/SGX3 organizational page for professional networking and career tracking.
-      session: 1
-    - name: ORCID
-      url: https://orcid.org/
-      description: Free persistent researcher identifier to link from your portfolio alongside LinkedIn and GitHub.
+    - name: SGX3 LinkedIn Page
+      url: https://www.linkedin.com/company/sciencegateways/
+      description: Official LinkedIn company page for SGX3/SGCI; students must follow this page as part of Task Sheet Item #6.
       session: 2
-    - name: Jeaime's GitHub Profile
+    - name: Canva
+      url: https://www.canva.com
+      description: Graphic design web tool recommended for creating visual presentations, technical posters, and project slide decks.
+      session: 1
+    - name: Buffer
+      url: https://buffer.com/
+      description: Social media management and automation platform used to schedule posts and manage professional web presence.
+      session: 4
+    - name: Jeaime Powell's GitHub Profile
       url: https://github.com/jeaimehp
-      description: GitHub profile for lead instructor Jeaime Powell, featuring workshop sample code and automation tools.
+      description: Public GitHub profile page for instructor Jeaime Powell showcasing personal research repositories.
       session: 2
     - name: Jeaime Powell's Live Demo Web Page
       url: https://jeaimehpc.com/jeaimes_awesome_code/
@@ -82,47 +71,35 @@
       url: https://abr9h9m.github.io/Abraham-s-portfolio.github.io/
       description: Live sample GitHub Pages portfolio site shared by returning scholar Abraham Ashade.
       session: 2
-    - name: Buffer
-      url: https://buffer.com/
-      description: Social media management and automation platform used to schedule posts and manage professional web presence.
-      session: 4
 
 - group: National Computing Resources
   links:
     - name: NAIRR Pilot Portal
-      url: https://nairrpilot.org
-      description: National AI Research Resource portal serving federal research projects across 44 states.
+      url: https://nairrpilot.org/
+      description: National AI Research Resource portal connecting researchers to national computing infrastructure, datasets, and AI models.
       session: 1
     - name: ACCESS-CI
       url: https://access-ci.org/
       description: Advanced Cyberinfrastructure Coordination Ecosystem (Services & Support) for national HPC allocations.
-      session: 2
+      session: 1
     - name: CloudBank
       url: https://www.cloudbank.org/
       description: Access to commercial cloud computing resources for NSF-funded research and education.
-      session: 2
+      session: 1
     - name: National Research Platform (NRP)
       url: https://nationalresearchplatform.org/
       description: Distributed national platform for research computing, data, and GPU resources.
-      session: 2
-    - name: National Science Foundation
+      session: 1
+    - name: National Science Foundation (NSF)
       url: https://www.nsf.gov
-      description: Federal agency funding SGX3 (award 2231406) and the SGCI (award ACI-1547611).
+      description: Official federal agency website referenced during the discussion on the NSF terminology shift from AI to Superintelligence (SI).
       session: 1
 
 - group: Student Opportunities & Community
   links:
     - name: SGX3 Student Programs
       url: https://sciencegateways.org/education-training/student-focused
-      description: Central hub for undergraduate coding institutes, hackathons, and student opportunities.
-      session: 1
-    - name: SGX3 Newsletter
-      url: https://sciencegateways.org/newsletter
-      description: Science Gateways newsletter that all trainees subscribe to as part of the task sheet.
-      session: 2
-    - name: ADMI
-      url: https://admiusa.org/
-      description: Computing consortium for HBCU and minority-serving institution computational science teams and code-a-thons.
+      description: Science Gateways Community Institute directory of student internships, coding institutes, and national hackathons.
       session: 1
     - name: ADMI 2026 Symposium
       url: https://admiusa.github.io/2026symposium/
@@ -138,14 +115,14 @@
       session: 1
     - name: US-RSE
       url: https://us-rse.org/
-      description: United States Research Software Engineer Association, one of the national programs trainees can apply to.
-      session: 2
+      description: United States Research Software Engineer Association, one of the technical communities the cohort mapped out.
+      session: 4
 
 - group: AI Tools
   links:
-    - name: MetaMuse AI Platform
+    - name: Muse AI Platform
       url: https://muse.ai
-      description: Multi-agent AI assistant harness used for workflow automation and code synthesis.
+      description: Main platform URL for MetaMuse personal AI assistant software and collaborative workspace tools.
       session: 1
     - name: Muse AI Referral Join Link
       url: https://muse.ai/join
