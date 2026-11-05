@@ -88,8 +88,7 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
   `main` on 2026-11-04. The "confirm" items in Open items were still unanswered
   at push time, so that content is public as written.
 - Sections: Hero, About (`#about`), What You'll Learn (`#training`),
-  Why Participate (`#benefits`), Program at a Glance (`#details`),
-  Application (`#apply`: heading, blurb, application URL, QR code).
+  Why Participate (`#benefits`), Program at a Glance (`#details`).
   NSF acknowledgment in footer.
 - **Session articles are being rewritten** from text the user pastes in, one
   session at a time. Old Sessions 1–3 removed 2026-11-04 (recoverable from git
@@ -128,11 +127,10 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
   the Resources rule: they have no session, and the user asked for no unlabeled
   links there.
 - Suniyah's and Akira's photos are cropped to hide LinkedIn's #OPENTOWORK frame.
-- **The program started Oct 19, 2026.** Apply Now buttons are gone, but the
-  `#apply` section (URL + QR), footer apply link, README "How to Apply",
-  OG image, and `DEVELOPMENT.md` (section table, pre-push checklist) still
-  reference applying. Confirm whether to remove/replace those too, e.g. with
-  an "in progress" / schedule page.
+- Application leftovers after removing `#apply` and the footer link: README ("Apply now",
+  "How to Apply"), `application_url` in `_config.yml`, `apply-qr.svg` (still reachable by
+  URL), unused `.apply` CSS, OG image, and DEVELOPMENT.md's apply-link notes. Confirm
+  whether to remove them. Home page hero/details copy may also still read as recruiting.
 - **Slack invite link deliberately NOT published.** The user's new Session 1
   text includes the live workspace invite; on this public site anyone could
   join with it. The page says "Invite shared directly with participants". Only
@@ -180,6 +178,7 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
 
 Newest first. Add a line for every meaningful change.
 
+- 2026-11-04 — Removed the home page `#apply` section and the footer apply link per user.
 - 2026-11-04 — Updated Session 1's NAIRR numbers and changed Superintelligence to Super
   Intelligence site-wide, matching nairrpilot.org.
 - 2026-11-04 — Updated NAIRR to its new name site-wide per user, with wording from

@@ -63,7 +63,6 @@ Gemfile                  Ruby gems (the github-pages gem pins Jekyll and its plu
 | What You'll Learn | `#training` | Three cards: Technical Skills, Professional Development, National Computing Resources |
 | Why Participate? | `#benefits` | Seven participant outcomes |
 | Program at a Glance | `#details` | Key program facts and the stipend note |
-| Application | `#apply` | Final call to action, full application URL, and QR code |
 
 ### Key Settings in `_config.yml`
 
@@ -235,7 +234,6 @@ Only publish confirmed program details. Don't add an application deadline, numbe
 
 - [ ] `bundle exec jekyll build` runs with no errors
 - [ ] The page looks right on a desktop and on a phone-width window
-- [ ] Every Apply Now button opens `https://forms.gle/UMbYaVC8EJu2Vsfu7`
 - [ ] The navigation links jump to the correct sections
 - [ ] New images have meaningful `alt` text, or `alt=""` if they are decorative
 
