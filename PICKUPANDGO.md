@@ -29,7 +29,7 @@ $500 stipend for selected participants.
 | Home page content | `index.html` |
 | Session Summaries list page (`/session-summaries/`) | `session-summaries.html` |
 | One session summary per file | `_sessions/session-NN.md` (layout `_layouts/session.html`) |
-| Participants page (`/participants/`) | `participants.html` (renders `_data/participants.yml`; photos in `assets/images/participants/`) |
+| Participants page (`/participants/`) | `participants.html` (renders `_data/participants.yml` and `_data/schools.yml`; photos in `assets/images/participants/`) |
 | Resources page (`/resources/`) | `resources.html` (renders `_data/resources.yml`) |
 | All resource links (name, url, description, group, session) | `_data/resources.yml` |
 | Page shell / header / footer | `_layouts/default.html`, `_includes/header.html`, `_includes/footer.html` |
@@ -106,6 +106,13 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
 
 ## Open items / ideas
 
+- School links: ECSU and NSU are on Resources (Session 1). Kentucky State isn't, since
+  no article names it and the user wants no unlabeled links there. ECSU's icon is a
+  screen capture (its site blocks direct downloads); NSU's favicon is only 16px.
+- **Mohamed Elbakary** (faculty, confirmed by user) is under Program Team as Associate
+  Professor, with initials and no LinkedIn or photo. Don't publish attendance.
+- Participant details come from the user's list. Exceptions: Qimora's major is from
+  LinkedIn (blank in the list), and "KY State University" is written out in full.
 - Participants page: the user confirmed on 2026-11-04 that the students know about
   it. Bios leave out GPAs, religion, Greek life, hometowns, part-time jobs, and
   open-to-work status.
@@ -165,6 +172,14 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
 
 Newest first. Add a line for every meaningful change.
 
+- 2026-11-04 — Participants page: school names link to school sites with favicons
+  (`_data/schools.yml`, `assets/images/schools/`).
+- 2026-11-04 — Added Dr. Mohamed Elbakary to the Participants page; LinkedIn link is
+  now optional.
+- 2026-11-04 — Applied the user's participant details: added Charlie Nelson, set Akira
+  to Junior/Senior, matched Kayden's bio to Computer Science.
+- 2026-11-04 — Added school, major, and classification to students and Qimora on
+  the Participants page.
 - 2026-11-04 — Removed Costa Rica hackathon mentions from Sessions 2 and 3 per user.
 - 2026-11-04 — Removed NSF site visit mentions from Sessions 2, 3, and 4 per user.
 - 2026-11-04 — Standardized names site-wide per user: Qimora Mason, Je'aime Powell.

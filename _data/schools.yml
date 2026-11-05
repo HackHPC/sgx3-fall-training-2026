@@ -1,0 +1,12 @@
+# School links and icons for the Participants page, keyed by the `school`
+# value in _data/participants.yml. Icons are each school's own favicon.
+
+Elizabeth City State University:
+  url: https://ecsu.edu/
+  icon: ecsu.png
+Norfolk State University:
+  url: https://www.nsu.edu/
+  icon: nsu.png
+Kentucky State University:
+  url: https://kysu.edu/
+  icon: kysu.png

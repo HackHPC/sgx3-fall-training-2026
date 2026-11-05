@@ -1,6 +1,8 @@
 # People shown on the Participants page (/participants/).
 # `photo` is a file in assets/images/participants/; leave it out to show initials.
-# Bios are based on each person's LinkedIn profile.
+# `linkedin` is optional.
+# Bios are based on each person's LinkedIn profile. school, major, and classification
+# come from the list the user provided; Qimora's major comes from LinkedIn.
 
 - group: Program Team
   people:
@@ -27,6 +29,9 @@
         University and is an NSF Presidential Awardee for Excellence in Science, Mathematics and
         Engineering Mentoring.
     - name: Qimora Mason
+      school: Elizabeth City State University
+      major: "Computer Science & Mathematics"
+      classification: Senior
       role: Assistant Trainer
       initials: QM
       photo: qimora-mason.jpg
@@ -36,18 +41,31 @@
         focus on machine learning and human-centered computing. Qimora has done research at Sandia
         National Laboratories and the UVA School of Data Science, and has been part of SGX3 for about
         three years, first as a student trainee and now as a student trainer.
+    - name: Mohamed Elbakary
+      role: Associate Professor
+      initials: ME
+      bio: >-
+        Dr. Elbakary is an Associate Professor in the Department of Mathematics, Computer Science, and
+        Engineering Technology at Elizabeth City State University. Dr. Elbakary is also HackHPC@ADMI26
+        event staff, with experience in computer science, engineering technology, applied research,
+        and student mentorship.
 
 - group: Students
   people:
     - name: Kayden Faustin-Cadas
+      school: Elizabeth City State University
+      major: "Computer Science"
+      classification: Junior
       initials: KF
       photo: kayden-faustin-cadas.jpg
       linkedin: https://www.linkedin.com/in/kayden-faustin-cadas-b928a535b
       bio: >-
-        Kayden is pursuing a Bachelor of Science in Computer and Information Systems
-        Security/Information Assurance at Elizabeth City State University and has been an SGX3 member
-        since 2025.
+        Kayden is a Computer Science student at Elizabeth City State University and has been an SGX3
+        member since 2025.
     - name: Kamyra Guinn
+      school: Elizabeth City State University
+      major: "Biology"
+      classification: Senior
       initials: KG
       photo: kamyra-guinn.jpg
       linkedin: https://www.linkedin.com/in/kamyraguinn
@@ -56,6 +74,9 @@
         City State University. An aspiring healthcare executive, Kamyra brings strengths in patient
         care, scientific research, and communication.
     - name: Dillon Moore
+      school: Elizabeth City State University
+      major: "Computer Science"
+      classification: Junior
       initials: DM
       photo: dillon-moore.jpg
       linkedin: https://www.linkedin.com/in/dillon-moore-46b411386
@@ -64,6 +85,9 @@
         Dillon was part of the first cohort of Jefferson Lab's Big Data science internship and is
         currently learning Splunk.
     - name: Suniyah Esey
+      school: Elizabeth City State University
+      major: "Computer Science"
+      classification: Junior
       initials: SE
       photo: suniyah-esey.jpg
       linkedin: https://www.linkedin.com/in/suniyah-esey-51a64a374
@@ -71,6 +95,9 @@
         Suniyah is a Computer Science scholar at Elizabeth City State University and an MCSET student
         assistant. Suniyah is also an Army ROTC cadet and the media coordinator for VikeNu Modeling.
     - name: Abraham Ashade
+      school: Elizabeth City State University
+      major: "Computer Science"
+      classification: Junior
       initials: AA
       photo: abraham-ashade.jpg
       linkedin: https://www.linkedin.com/in/abrahamashade
@@ -80,6 +107,9 @@
         SGX3 Cybersecurity certification, works with Linux, and has language skills in Yoruba and
         Spanish.
     - name: Issiah Hostick
+      school: Elizabeth City State University
+      major: "Mathematics & Computer Science"
+      classification: Sophomore
       initials: IH
       photo: issiah-hostick.jpg
       linkedin: https://www.linkedin.com/in/issiah-h-7b2719126
@@ -87,12 +117,18 @@
         Issiah is pursuing a Bachelor of Science in Mathematics and Computer Science at Elizabeth City
         State University, where Issiah also works as a mathematics tutor.
     - name: Akira Evanson
+      school: Elizabeth City State University
+      major: "Computer Science"
+      classification: Junior/Senior
       initials: AE
       photo: akira-evanson.jpg
       linkedin: https://www.linkedin.com/in/akira-e-6605a2248
       bio: >-
         Akira is pursuing a Bachelor of Science in Computer Science at Elizabeth City State University.
     - name: Bryson Clark
+      school: Elizabeth City State University
+      major: "Computer Science"
+      classification: Junior
       initials: BC
       photo: bryson-clark.jpg
       linkedin: https://www.linkedin.com/in/bryson-clark-20659a255
@@ -100,11 +136,17 @@
         Bryson is a Computer Science student at Elizabeth City State University with an interest in
         user experience and user interface design, and has skills in Figma and Python.
     - name: Bryce Cliette
+      school: Norfolk State University
+      major: "Cybersecurity"
+      classification: Junior
       initials: BC
       linkedin: https://www.linkedin.com/in/bryce-cliette-541816447
       bio: >-
         Bryce is a cybersecurity student at Norfolk State University.
     - name: Leilani Bell
+      school: Norfolk State University
+      major: "Computer Science"
+      classification: Junior
       initials: LB
       photo: leilani-bell.jpg
       linkedin: https://www.linkedin.com/in/leilani-b-nsu
@@ -114,6 +156,9 @@
         helped build Groupie, an educational game that introduces unsupervised machine learning.
         Leilani is also a co-founder of Code the Future.
     - name: Destiny Hackett
+      school: Norfolk State University
+      major: "Computer Science: Cybersecurity"
+      classification: Junior
       initials: DH
       photo: destiny-hackett.jpg
       linkedin: https://www.linkedin.com/in/destiny-hackett-nsu
@@ -122,6 +167,9 @@
         As an intern at the Creative Gaming Simulation Lab, Destiny helped develop and test Groupie, an
         educational data science game, and works with Python, Java, PowerShell, Unix/Linux, and Git.
     - name: Jayden Queen
+      school: Norfolk State University
+      major: "Computer Science: Cybersecurity"
+      classification: Sophomore
       initials: JQ
       photo: jayden-queen.jpg
       linkedin: https://www.linkedin.com/in/jayden-queen-britt-5280082b1
@@ -130,6 +178,9 @@
         University, with CompTIA Network+ and VMware VCTA-DCV certifications. Jayden's cloud and
         virtualization experience includes a Cloud Engineering internship at Dynamic vSolutions.
     - name: Charlie Nelson
+      school: Kentucky State University
+      major: "Computer Science"
+      classification: Graduate
       initials: CN
       linkedin: https://www.linkedin.com/in/charlien-dev
       bio: >-

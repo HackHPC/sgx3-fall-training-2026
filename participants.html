@@ -28,8 +28,14 @@ description: >-
         {% endif %}
         <h3>{{ person.name }}</h3>
         {% if person.role %}<p class="participant-role">{{ person.role }}</p>{% endif %}
+        {% if person.school %}
+        {% assign school = site.data.schools[person.school] %}
+        <p class="participant-school"><a href="{{ school.url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/schools/' | append: school.icon | relative_url }}" alt="" width="20" height="20">{{ person.school }}<span class="visually-hidden"> (opens in a new tab)</span></a><br>{{ person.major }} &middot; {{ person.classification }}</p>
+        {% endif %}
         <p class="participant-bio">{{ person.bio }}</p>
+        {% if person.linkedin %}
         <a class="participant-link" href="{{ person.linkedin }}" target="_blank" rel="noopener">LinkedIn<span class="visually-hidden"> profile for {{ person.name | escape }} (opens in a new tab)</span></a>
+        {% endif %}
       </li>
       {% endfor %}
     </ul>

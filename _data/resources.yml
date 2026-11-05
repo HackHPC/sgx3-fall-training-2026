@@ -97,6 +97,14 @@
 
 - group: Student Opportunities & Community
   links:
+    - name: Elizabeth City State University
+      url: https://ecsu.edu/
+      description: University home of many SGX3 Fall Training 2026 participants and program team members.
+      session: 1
+    - name: Norfolk State University
+      url: https://www.nsu.edu/
+      description: University home of many SGX3 Fall Training 2026 participants.
+      session: 1
     - name: SGX3 Student Programs
       url: https://sciencegateways.org/education-training/student-focused
       description: Science Gateways Community Institute directory of student internships, coding institutes, and national hackathons.

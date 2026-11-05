@@ -874,5 +874,7 @@ main:focus { outline: none; }
 }
 .participant-card h3 { margin: 0; font-size: 1.2rem; color: var(--navy); }
 .participant-role { margin: 4px 0 0; font-size: .9rem; font-weight: 700; color: var(--blue); }
+.participant-school { margin: 6px 0 0; font-size: .9rem; font-weight: 600; color: var(--navy); }
+.participant-school img { display: inline-block; width: 20px; height: 20px; margin-right: 6px; vertical-align: -4px; object-fit: contain; }
 .participant-bio { margin: 12px 0 16px; color: var(--muted); }
 .participant-link { margin-top: auto; font-weight: 600; }
