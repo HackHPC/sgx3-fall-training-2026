@@ -1,0 +1,38 @@
+---
+layout: default
+title: Participants
+permalink: /participants/
+description: >-
+  Meet the program team and students of SGX3 Fall Training 2026.
+---
+
+<section class="page-head" aria-labelledby="page-title">
+  <div class="container">
+    <p class="section-kicker">SGX3 Fall Training 2026</p>
+    <h1 id="page-title">Participants</h1>
+    <p class="page-head-intro">Meet the program team and students of the Fall 2026 cohort.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% for group in site.data.participants %}
+    <h2 class="participant-group" id="{{ group.group | slugify }}">{{ group.group }}</h2>
+    <ul class="participant-grid">
+      {% for person in group.people %}
+      <li class="participant-card">
+        {% if person.photo %}
+        <img class="participant-photo" src="{{ '/assets/images/participants/' | append: person.photo | relative_url }}" alt="{{ person.name | escape }}" width="112" height="112" loading="lazy">
+        {% else %}
+        <span class="participant-photo participant-initials" aria-hidden="true">{{ person.initials }}</span>
+        {% endif %}
+        <h3>{{ person.name }}</h3>
+        {% if person.role %}<p class="participant-role">{{ person.role }}</p>{% endif %}
+        <p class="participant-bio">{{ person.bio }}</p>
+        <a class="participant-link" href="{{ person.linkedin }}" target="_blank" rel="noopener">LinkedIn<span class="visually-hidden"> profile for {{ person.name | escape }} (opens in a new tab)</span></a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+</section>

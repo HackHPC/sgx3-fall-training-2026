@@ -9,11 +9,11 @@ description: >-
   look at Buffer and Perplexity.
 ---
 
-**Presenter:** Jeaime Powell (HPC Specialist & Workforce Development Lead)
+**Presenter:** Je'aime Powell (HPC Specialist & Workforce Development Lead)
 
 ## Mobilizing Digital Footprints for the Tech Ecosystem
 
-On October 28, 2026, the SGX3 Fall Training cohort met for Session 4, shifting focus toward career positioning, professional social media optimization, and AI-assisted workflow automation. Building on earlier technical introductions, lead instructor Jeaime Powell guided scholars through the strategic necessity of cultivating an authentic, highly visible digital identity in high-performance computing (HPC) and research cyberinfrastructure.
+On October 28, 2026, the SGX3 Fall Training cohort met for Session 4, shifting focus toward career positioning, professional social media optimization, and AI-assisted workflow automation. Building on earlier technical introductions, lead instructor Je'aime Powell guided scholars through the strategic necessity of cultivating an authentic, highly visible digital identity in high-performance computing (HPC) and research cyberinfrastructure.
 
 The session emphasized **Task Sheet Item #6**, which mandates that trainees establish or refine their LinkedIn profiles and follow the official SGX3 organization page. Powell explained that for undergraduate researchers and computer science scholars, LinkedIn acts as a primary professional portal—serving as an interactive resume, a portfolio landing page, and a networking engine for recruiters, graduate schools, and national laboratory directors. Participants submitted their live profile links into the `#all-sgx3-fall-training-2026` Slack channel for peer review and instructor feedback.
 
@@ -25,9 +25,9 @@ The cohort also explored automated social media platforms like **Buffer**, disco
 
 ## Collaborative Workshop and Strategic Career Preparation
 
-During the interactive workshop portion of the session, trainees—including Bryce Cliette, Charlie Nelson, Destiny Hackett, Bryson Clark, Jayden Queen, Suniyah Esey, and student assistants Kimora Mason and Abraham Ashade—worked synchronously on their digital assets. Instructors generated individualized AI feedback reports for each student's profile, providing tailored suggestions on bio summaries, project experience listings, and skill endorsements to prepare them for upcoming internship application deadlines.
+During the interactive workshop portion of the session, trainees—including Bryce Cliette, Charlie Nelson, Destiny Hackett, Bryson Clark, Jayden Queen, Suniyah Esey, and student assistants Qimora Mason and Abraham Ashade—worked synchronously on their digital assets. Instructors generated individualized AI feedback reports for each student's profile, providing tailored suggestions on bio summaries, project experience listings, and skill endorsements to prepare them for upcoming internship application deadlines.
 
-Closing out the meeting, Powell reminded participants to maintain steady progress on their OverTheWire Bandit wargames alongside their LinkedIn milestones. With upcoming schedule bottlenecks—including university final exams, the SC26 conference, and the SGX3 NSF Site Visit—the session reinforced the importance of proactive time management and leveraging AI assistants to maintain continuous learning momentum.
+Closing out the meeting, Powell reminded participants to maintain steady progress on their OverTheWire Bandit wargames alongside their LinkedIn milestones. With upcoming schedule bottlenecks—including university final exams and the SC26 conference—the session reinforced the importance of proactive time management and leveraging AI assistants to maintain continuous learning momentum.
 
 ## Session 4 Resources and URLs
 

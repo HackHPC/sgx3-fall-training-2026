@@ -29,6 +29,7 @@ $500 stipend for selected participants.
 | Home page content | `index.html` |
 | Session Summaries list page (`/session-summaries/`) | `session-summaries.html` |
 | One session summary per file | `_sessions/session-NN.md` (layout `_layouts/session.html`) |
+| Participants page (`/participants/`) | `participants.html` (renders `_data/participants.yml`; photos in `assets/images/participants/`) |
 | Resources page (`/resources/`) | `resources.html` (renders `_data/resources.yml`) |
 | All resource links (name, url, description, group, session) | `_data/resources.yml` |
 | Page shell / header / footer | `_layouts/default.html`, `_includes/header.html`, `_includes/footer.html` |
@@ -94,6 +95,9 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
   session at a time. Old Sessions 1–3 removed 2026-11-04 (recoverable from git
   at `aa7b3c6`). New `session-01.md` through `session-05.md` are in; later
   sessions pending.
+- **Participants** nav tab + page added and pushed 2026-11-04: 16
+  people with bios based on LinkedIn; 14 photos, initials for Bryce Cliette and
+  Charlie Nelson (no LinkedIn photo).
 - **Resources** nav tab + page; every link is tied to a session article (user:
   no unlabeled links). Resync pushed to `main` on 2026-11-04.
 - All **Apply Now buttons removed** (2026-10-26): header (desktop + mobile),
@@ -102,6 +106,13 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
 
 ## Open items / ideas
 
+- Participants page: the user confirmed on 2026-11-04 that the students know about
+  it. Bios leave out GPAs, religion, Greek life, hometowns, part-time jobs, and
+  open-to-work status.
+- **Participants' LinkedIn links are not on the Resources page**, an exception to
+  the Resources rule: they have no session, and the user asked for no unlabeled
+  links there.
+- Suniyah's and Akira's photos are cropped to hide LinkedIn's #OPENTOWORK frame.
 - **The program started Oct 19, 2026.** Apply Now buttons are gone, but the
   `#apply` section (URL + QR), footer apply link, README "How to Apply",
   OG image, and `DEVELOPMENT.md` (section table, pre-push checklist) still
@@ -117,10 +128,8 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
   the text said "Post-Master's / Undergraduate"), "program, virtual onboarding"
   → "program, virtually onboarding". Its claims (AI → SI terminology, AWS token
   evaluation, 400 projects / 44 states, 1 billion Muse tokens) were not verified.
-- **New Sessions 2 and 3 publish the NSF site visit and Costa Rica Hackathon
-  (Dec 7–11)**, as in the user's text. The site visit dates conflict: Session 2
-  says Dec 2–3, Session 3 says Dec 1–3. Confirm the date and that both are OK to
-  make public before pushing.
+- **Do not publish the NSF site visit or the Costa Rica trip/hackathon** (user,
+  2026-11-04). Removed from Sessions 2, 3, and 4.
 - New Sessions 2 and 3 name students (module roles, one student's portfolio, and
   Charlie Nelson joining the cohort), as in the user's text. Confirm with the
   program team before pushing.
@@ -156,6 +165,12 @@ gh api repos/HackHPC/sgx3-fall-training-2026/pages/builds/latest -q '.status'
 
 Newest first. Add a line for every meaningful change.
 
+- 2026-11-04 — Removed Costa Rica hackathon mentions from Sessions 2 and 3 per user.
+- 2026-11-04 — Removed NSF site visit mentions from Sessions 2, 3, and 4 per user.
+- 2026-11-04 — Standardized names site-wide per user: Qimora Mason, Je'aime Powell.
+- 2026-11-04 — Added Participants page: `participants.html`,
+  `_data/participants.yml`, photos, nav tab, CSS. Tightened nav spacing and moved
+  the mobile menu breakpoint from 920px to 1080px so seven nav items fit on one line.
 - 2026-11-04 — Synced `_data/resources.yml` with the new articles: names and
   descriptions match the article tables, session labels corrected. Removed, per
   the user, the six links no article mentions: HackHPC Repository, Slack setup

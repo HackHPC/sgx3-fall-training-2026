@@ -9,11 +9,11 @@ description: >-
   Bandit Levels 0 through 4.
 ---
 
-**Presenters:** Jeaime Powell (HPC Specialist & Workforce Development Lead), Dr. Linda Hayden (Co-PI & Workforce Development Lead), Kimora Mason (Student Assistant), Abraham Ashade (Student Mentor)
+**Presenters:** Je'aime Powell (HPC Specialist & Workforce Development Lead), Dr. Linda Hayden (Co-PI & Workforce Development Lead), Qimora Mason (Student Assistant), Abraham Ashade (Student Mentor)
 
 ## Transitioning from Graphical UIs to Command-Line Mastery
 
-On October 26, 2026, the SGX3 Fall Training cohort convened for Session 3, embarking on an intensive technical deep dive into Linux terminal mechanics and remote High-Performance Computing (HPC) environments. Moving away from traditional graphical user interfaces (GUIs), lead instructor Jeaime Powell and student mentor Abraham Ashade introduced trainees to the foundational command-line interface (CLI) skills required to navigate national cyberinfrastructure, manage remote server resources, and solve security puzzles.
+On October 26, 2026, the SGX3 Fall Training cohort convened for Session 3, embarking on an intensive technical deep dive into Linux terminal mechanics and remote High-Performance Computing (HPC) environments. Moving away from traditional graphical user interfaces (GUIs), lead instructor Je'aime Powell and student mentor Abraham Ashade introduced trainees to the foundational command-line interface (CLI) skills required to navigate national cyberinfrastructure, manage remote server resources, and solve security puzzles.
 
 The session centered on the **OverTheWire Bandit Wargames**, a progressive cybersecurity challenge designed to build terminal confidence through gamified problem-solving. Powell demystified the underlying mechanics of terminal interactions, explaining that while modern operating systems rely on visual folder windows, headless HPC clusters require researchers to issue explicit textual commands to list, inspect, manipulate, and transfer data files across remote servers.
 
@@ -30,7 +30,7 @@ The technical instruction covered critical command-line protocols and file-syste
 
 Demonstrating the program's collaborative peer mentorship model, junior computer science scholar **Abraham Ashade** led the cohort through a live, step-by-step walkthrough of Bandit Levels 0 through 4. Ashade demonstrated how to extract passwords, update individual **Bandit Command Cheat Sheets**, and transition between levels by exiting current sessions (`exit`) and logging into subsequent accounts (`bandit1`, `bandit2`, `bandit3`, `bandit4`). Returning student **Dillon "Lo" Moore** supported peer troubleshooting and prepared to co-lead the upcoming Bandit training modules.
 
-The session also welcomed new cohort participant **Charlie Nelson**, with Jeaime Powell setting up a dedicated student deliverable directory and task sheet repository. Dr. Linda Hayden addressed the cohort regarding program milestones, reminding trainees that while completing Bandit Level 25 is the mandatory task sheet requirement by December 30th, students should aim beyond the baseline—encouraging them to tackle all 33 levels of the wargames. Dr. Hayden and Powell concluded by contextualizing these technical exercises within the upcoming fall schedule, preparing students for the SGX3 NSF Site Visit (Dec 1–3), the Costa Rica Hackathon (Dec 7–11), and final GitHub Portfolio presentations scheduled for mid-December.
+The session also welcomed new cohort participant **Charlie Nelson**, with Je'aime Powell setting up a dedicated student deliverable directory and task sheet repository. Dr. Linda Hayden addressed the cohort regarding program milestones, reminding trainees that while completing Bandit Level 25 is the mandatory task sheet requirement by December 30th, students should aim beyond the baseline—encouraging them to tackle all 33 levels of the wargames. Dr. Hayden and Powell concluded by contextualizing these technical exercises within the upcoming fall schedule, preparing students for final GitHub Portfolio presentations scheduled for mid-December.
 
 ## Session 3 Resources and URLs
 

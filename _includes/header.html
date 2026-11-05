@@ -17,6 +17,7 @@
         <li><a href="{{ '/' | relative_url }}#benefits">Benefits</a></li>
         <li><a href="{{ '/' | relative_url }}#details">Program Details</a></li>
         <li><a href="{{ '/session-summaries/' | relative_url }}"{% if page.url contains '/session-summaries/' %} aria-current="page"{% endif %}>Session Summaries</a></li>
+        <li><a href="{{ '/participants/' | relative_url }}"{% if page.url == '/participants/' %} aria-current="page"{% endif %}>Participants</a></li>
         <li><a href="{{ '/resources/' | relative_url }}"{% if page.url == '/resources/' %} aria-current="page"{% endif %}>Resources</a></li>
       </ul>
     </nav>

@@ -59,11 +59,11 @@
       url: https://buffer.com/
       description: Social media management and automation platform used to schedule posts and manage professional web presence.
       session: 4
-    - name: Jeaime Powell's GitHub Profile
+    - name: Je'aime Powell's GitHub Profile
       url: https://github.com/jeaimehp
-      description: Public GitHub profile page for instructor Jeaime Powell showcasing personal research repositories.
+      description: Public GitHub profile page for instructor Je'aime Powell showcasing personal research repositories.
       session: 2
-    - name: Jeaime Powell's Live Demo Web Page
+    - name: Je'aime Powell's Live Demo Web Page
       url: https://jeaimehpc.com/jeaimes_awesome_code/
       description: Live web page deployed during the session to demonstrate successful GitHub Pages publishing.
       session: 2

@@ -34,6 +34,9 @@ session-summaries.html   Session Summaries list page (/session-summaries/)
 _sessions/               One Markdown file per session summary
 resources.html           Resources page (/resources/), built from _data/resources.yml
 _data/resources.yml      Every link shared with the cohort: name, URL, description, group
+participants.html        Participants page (/participants/), built from _data/participants.yml
+_data/participants.yml   Program team and students: name, role, bio, photo, LinkedIn
+assets/images/participants/  Participant photos
 assets/css/site.css     All styles (colors and sizes are defined at the top in :root)
 assets/js/main.js        The mobile menu toggle (the only JavaScript on the site)
 assets/images/

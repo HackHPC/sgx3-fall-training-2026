@@ -9,11 +9,11 @@ description: >-
   discussion of AI, Superintelligence, and environmental ethics.
 ---
 
-**Presenters:** Jeaime Powell (HPC Specialist & Workforce Development Lead), Dr. Linda Hayden (Co-PI & Workforce Development Lead), Kimora Mason (Student Assistant)
+**Presenters:** Je'aime Powell (HPC Specialist & Workforce Development Lead), Dr. Linda Hayden (Co-PI & Workforce Development Lead), Qimora Mason (Student Assistant)
 
 ## Pioneering Research Computing for the Next Generation
 
-On October 19, 2026, the SGX3 Center of Excellence launched its Fall Training 2026 program, virtually onboarding undergraduate scholars from Elizabeth City State University (ECSU), Norfolk State University (NSU), and partner institutions for an intensive 10-week cyberinfrastructure experience. Lead instructor Jeaime Powell and Co-PI Dr. Linda Hayden welcomed the incoming cohort, setting the stage for a curriculum engineered to bridge academic learning with national research computing capabilities.
+On October 19, 2026, the SGX3 Center of Excellence launched its Fall Training 2026 program, virtually onboarding undergraduate scholars from Elizabeth City State University (ECSU), Norfolk State University (NSU), and partner institutions for an intensive 10-week cyberinfrastructure experience. Lead instructor Je'aime Powell and Co-PI Dr. Linda Hayden welcomed the incoming cohort, setting the stage for a curriculum engineered to bridge academic learning with national research computing capabilities.
 
 The inaugural session established the core technical and professional pillars of the program. Participants will build hands-on mastery across four essential technical domains: Linux terminal mechanics via the OverTheWire Bandit challenge, Python programming, Git/GitHub version control, and cloud environments. Rather than treating these tools as isolated exercises, the training requires trainees to earn industry certifications—such as DataCamp Git and Kaggle Python credentials—and construct public GitHub Pages portfolio sites to demonstrate verifiable competencies to future employers and graduate admissions committees. To support their intensive 40-hour learning commitment through December 30th, accepted participants who complete all task sheet milestones receive a $500 financial stipend administered via UC San Diego's PaymentWorks platform.
 
@@ -25,9 +25,9 @@ Dr. Hayden also highlighted SGX3's leadership in establishing the National Artif
 
 ## Navigating the Frontier: AI, Superintelligence, and Environmental Ethics
 
-Following cohort introductions and a traditional screenshot photo session for NSF compliance, Jeaime Powell led a provocative, interactive discussion on the rapidly evolving landscape of artificial intelligence. Trainees discussed the contrast between traditional academic environments—where faculty often restrict generative AI—and industry expectations, where cloud providers like AWS evaluate software engineers on AI token utilization and prompt efficiency.
+Following cohort introductions and a traditional screenshot photo session for NSF compliance, Je'aime Powell led a provocative, interactive discussion on the rapidly evolving landscape of artificial intelligence. Trainees discussed the contrast between traditional academic environments—where faculty often restrict generative AI—and industry expectations, where cloud providers like AWS evaluate software engineers on AI token utilization and prompt efficiency.
 
-The conversation delved into a major federal terminology transition: as of late September 2026, the National Science Foundation and federal agencies began systematically replacing the term "Artificial Intelligence" (AI) with "Superintelligence" (SI) to reflect advanced reasoning models. Students debated the functional realities of current LLMs versus autonomous agents, emphasizing that humans remain essential for setting system boundaries and safety parameters. Furthermore, student assistant Kimora Mason raised critical environmental considerations regarding data center energy draw and regional water consumption for cooling systems, contrasting open-loop and closed-loop technologies.
+The conversation delved into a major federal terminology transition: as of late September 2026, the National Science Foundation and federal agencies began systematically replacing the term "Artificial Intelligence" (AI) with "Superintelligence" (SI) to reflect advanced reasoning models. Students debated the functional realities of current LLMs versus autonomous agents, emphasizing that humans remain essential for setting system boundaries and safety parameters. Furthermore, student assistant Qimora Mason raised critical environmental considerations regarding data center energy draw and regional water consumption for cooling systems, contrasting open-loop and closed-loop technologies.
 
 Closing out the session, Powell introduced personal AI assistant tools such as MetaMuse (Muse AI), demonstrating how conversational agents act as active study collaborators rather than simple search engines.
 

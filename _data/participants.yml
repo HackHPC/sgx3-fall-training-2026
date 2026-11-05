@@ -1,0 +1,138 @@
+# People shown on the Participants page (/participants/).
+# `photo` is a file in assets/images/participants/; leave it out to show initials.
+# Bios are based on each person's LinkedIn profile.
+
+- group: Program Team
+  people:
+    - name: Je'aime Powell
+      role: Trainer
+      initials: JP
+      photo: jeaime-powell.jpg
+      linkedin: https://www.linkedin.com/in/jeaimehp
+      bio: >-
+        Je'aime is co-founder of the Abundant Frontier Institute, a Product and Systems Analyst at
+        Omnibond, and has led HackHPC since 2018, with 32+ events reaching 68 academic institutions.
+        Earlier roles include Senior Systems Administrator at the Texas Advanced Computing Center
+        and Lecturer at UT Austin. Je'aime also serves on the ADMI Board and as a PEARC27 Student
+        Program Co-Chair.
+    - name: Linda Hayden
+      role: Program Lead
+      initials: LH
+      photo: linda-hayden.jpg
+      linkedin: https://www.linkedin.com/in/linda-hayden-5a8b424
+      bio: >-
+        Dr. Hayden directs the Center of Excellence in Remote Sensing Education and Research at
+        Elizabeth City State University and leads workforce development for the Science Gateways
+        Community Institute. Dr. Hayden holds a Ph.D. in Mathematics and Education from American
+        University and is an NSF Presidential Awardee for Excellence in Science, Mathematics and
+        Engineering Mentoring.
+    - name: Qimora Mason
+      role: Assistant Trainer
+      initials: QM
+      photo: qimora-mason.jpg
+      linkedin: https://www.linkedin.com/in/qimora-mason
+      bio: >-
+        Qimora studies Computer Science and Mathematics at Elizabeth City State University, with a
+        focus on machine learning and human-centered computing. Qimora has done research at Sandia
+        National Laboratories and the UVA School of Data Science, and has been part of SGX3 for about
+        three years, first as a student trainee and now as a student trainer.
+
+- group: Students
+  people:
+    - name: Kayden Faustin-Cadas
+      initials: KF
+      photo: kayden-faustin-cadas.jpg
+      linkedin: https://www.linkedin.com/in/kayden-faustin-cadas-b928a535b
+      bio: >-
+        Kayden is pursuing a Bachelor of Science in Computer and Information Systems
+        Security/Information Assurance at Elizabeth City State University and has been an SGX3 member
+        since 2025.
+    - name: Kamyra Guinn
+      initials: KG
+      photo: kamyra-guinn.jpg
+      linkedin: https://www.linkedin.com/in/kamyraguinn
+      bio: >-
+        Kamyra is a Biology (pre-medicine/pre-dentistry) student and Chancellor's Scholar at Elizabeth
+        City State University. An aspiring healthcare executive, Kamyra brings strengths in patient
+        care, scientific research, and communication.
+    - name: Dillon Moore
+      initials: DM
+      photo: dillon-moore.jpg
+      linkedin: https://www.linkedin.com/in/dillon-moore-46b411386
+      bio: >-
+        Dillon is a Computer Science scholar at Elizabeth City State University and an SGX3 apprentice.
+        Dillon was part of the first cohort of Jefferson Lab's Big Data science internship and is
+        currently learning Splunk.
+    - name: Suniyah Esey
+      initials: SE
+      photo: suniyah-esey.jpg
+      linkedin: https://www.linkedin.com/in/suniyah-esey-51a64a374
+      bio: >-
+        Suniyah is a Computer Science scholar at Elizabeth City State University and an MCSET student
+        assistant. Suniyah is also an Army ROTC cadet and the media coordinator for VikeNu Modeling.
+    - name: Abraham Ashade
+      initials: AA
+      photo: abraham-ashade.jpg
+      linkedin: https://www.linkedin.com/in/abrahamashade
+      bio: >-
+        Abraham is a Computer Science student at Elizabeth City State University, Vice President of the
+        Student Government Association, and a Thurgood Marshall College Fund Scholar. Abraham holds an
+        SGX3 Cybersecurity certification, works with Linux, and has language skills in Yoruba and
+        Spanish.
+    - name: Issiah Hostick
+      initials: IH
+      photo: issiah-hostick.jpg
+      linkedin: https://www.linkedin.com/in/issiah-h-7b2719126
+      bio: >-
+        Issiah is pursuing a Bachelor of Science in Mathematics and Computer Science at Elizabeth City
+        State University, where Issiah also works as a mathematics tutor.
+    - name: Akira Evanson
+      initials: AE
+      photo: akira-evanson.jpg
+      linkedin: https://www.linkedin.com/in/akira-e-6605a2248
+      bio: >-
+        Akira is pursuing a Bachelor of Science in Computer Science at Elizabeth City State University.
+    - name: Bryson Clark
+      initials: BC
+      photo: bryson-clark.jpg
+      linkedin: https://www.linkedin.com/in/bryson-clark-20659a255
+      bio: >-
+        Bryson is a Computer Science student at Elizabeth City State University with an interest in
+        user experience and user interface design, and has skills in Figma and Python.
+    - name: Bryce Cliette
+      initials: BC
+      linkedin: https://www.linkedin.com/in/bryce-cliette-541816447
+      bio: >-
+        Bryce is a cybersecurity student at Norfolk State University.
+    - name: Leilani Bell
+      initials: LB
+      photo: leilani-bell.jpg
+      linkedin: https://www.linkedin.com/in/leilani-b-nsu
+      bio: >-
+        Leilani is an honors Computer Science major, DNIMAS Scholar, and aspiring data scientist at
+        Norfolk State University. As an intern in the Creative Gaming and Simulation Lab, Leilani
+        helped build Groupie, an educational game that introduces unsupervised machine learning.
+        Leilani is also a co-founder of Code the Future.
+    - name: Destiny Hackett
+      initials: DH
+      photo: destiny-hackett.jpg
+      linkedin: https://www.linkedin.com/in/destiny-hackett-nsu
+      bio: >-
+        Destiny studies Computer Science with a cybersecurity concentration at Norfolk State University.
+        As an intern at the Creative Gaming Simulation Lab, Destiny helped develop and test Groupie, an
+        educational data science game, and works with Python, Java, PowerShell, Unix/Linux, and Git.
+    - name: Jayden Queen
+      initials: JQ
+      photo: jayden-queen.jpg
+      linkedin: https://www.linkedin.com/in/jayden-queen-britt-5280082b1
+      bio: >-
+        Jayden is a Computer Science: Cybersecurity student and DNIMAS Honors Scholar at Norfolk State
+        University, with CompTIA Network+ and VMware VCTA-DCV certifications. Jayden's cloud and
+        virtualization experience includes a Cloud Engineering internship at Dynamic vSolutions.
+    - name: Charlie Nelson
+      initials: CN
+      linkedin: https://www.linkedin.com/in/charlien-dev
+      bio: >-
+        Charlie focuses on cybersecurity analysis and network security, and holds a Bachelor of Science
+        in Computer Science from Kentucky State University. Charlie's background includes technical
+        analyst, system administrator, and quality assurance roles.
